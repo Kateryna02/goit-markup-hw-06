@@ -14,11 +14,10 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
+   
 </head>
 
 <body>
-
-
 
     <!-- header -->
 
@@ -27,14 +26,19 @@
             <nav class="nav">
                 <a class="logo link" href="./index.html">Web<span class="logo-black">Studio</span></a>
                 <ul class="list fist list-item">
-                    <li class="list-item"><a href="./index.html" class="list-item-one link">Studio</a></li>
+                    <li class=""><a href="./index.html" class="list-item-one link">Studio</a></li>
                     <li class=""><a href="./portfolio.html" class="list-item-one link">Portfolio</a></li>
                     <li class=""><a href="" class="list-item-one link">Contacts</a></li>
                 </ul>
             </nav>
+            <button class="mobile-menu-open-butten">
+                <svg class="mobale-menu-open-icon" aria-label="open mobale menu" width="32" height="22">
+                    <use href="./images/icons.svg#burger2"></use>
+                </svg>
+            </button>
             <!-- contact -->
             <address class="address-one">
-                <ul class=" list fist">
+                <ul class="list fist-address">
                     <li>
                         <a href="mailto:info@devstudio.com" class="address-mail link">info@devstudio.com</a>
                     </li>
@@ -45,7 +49,6 @@
             </address>
         </div>
     </header>
-
 
     <!-- main -->
     <main>
@@ -67,7 +70,7 @@
                 <ul class="section list">
                     <li class="set">
 
-                        <div class="features-item-conteiner">
+                        <div class="features-item-container">
                             <svg class="icons-link" width="64" height="64">
                                 <use href="./images/icons.svg#icon-antenna"></use>
                             </svg>
@@ -81,7 +84,7 @@
                     </li>
                     <li class="set">
 
-                        <div class="features-item-conteiner">
+                        <div class="features-item-container">
                             <svg class="icons-link" width="64" height="64">
                                 <use href="./images/icons.svg#icon-clock"></use>
                             </svg>
@@ -94,7 +97,7 @@
                         </p>
                     </li>
                     <li class="set">
-                        <div class="features-item-conteiner">
+                        <div class="features-item-container">
                             <svg class="icons-link" width="64" height="64">
                                 <use href="./images/icons.svg#icon-diagram"></use>
                             </svg>
@@ -107,7 +110,7 @@
                         </p>
                     </li>
                     <li class="set">
-                        <div class="features-item-conteiner">
+                        <div class="features-item-container">
                             <svg class="icons-link" width="64" height="64">
                                 <use href="./images/icons.svg#icon-astronaut"></use>
                             </svg>
@@ -127,7 +130,7 @@
         <section class="section-tthree">
             <div class="container">
                 <h2 class="general">What are we doing</h2>
-                <ul class="picture list">
+                <ul class="picture-img list">
                     <li class="cole">
                         <img src="./images/images-5.jpg" alt="laptop" width="360" />
                     </li>
@@ -302,9 +305,9 @@
         </section>
         <!-- section-5 -->
         <section class="section-logo">
-            <div class="container">
+            <div class="container section-logo-conteiner">
                 <h2 class="general-too-link">Customers</h2>
-                <!-- <div class="general-link"> -->
+              
                 <ul class="general-item list">
                     <li class="general-logo">
                         <a href="" class="general-imag">
@@ -344,7 +347,7 @@
                     </li>
 
                 </ul>
-                <!-- </div> -->
+                 </div> 
             </div>
         </section>
     </main>
@@ -352,7 +355,7 @@
 
     <footer class="footer">
         <div class="container content-footer">
-            <div class="conteiner-logo"> <a class="logo-too link" href="./index.html">Web<span
+            <div class="container-logo"> <a class="logo-too link" href="./index.html">Web<span
                         class="logo-white">Studio</span></a>
                 <p class="footer-title">
                     Increase the flow of customers and sales for your business with digital
@@ -392,8 +395,8 @@
                         </a>
                     </li>
                 </ul>
-            </div>
-            <!-- footer-3 -->
+            </div> 
+            
 
             <div class="component-title">
                 <p class="footer-logo">Subscribe</p>
@@ -480,6 +483,15 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+
+    <div class="mobile-menu-container">
+        <button class="mobile-menu-container-close-btn" type="button">
+            <svg class="mobile-menu-container-close-btn-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+        </button>
+
+    </div>
 </body>
 
 </html>
